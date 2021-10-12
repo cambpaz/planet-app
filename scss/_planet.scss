@@ -1,0 +1,102 @@
+@import "estandar";
+
+.contenedor-planeta {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-up {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.contenedor-imagen {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 482px;
+    width: 482px;
+    margin-right: 5rem;
+}
+#geology-img {
+    position: absolute;
+    width: 9.375rem;
+    top: 60%;
+    display: none;
+}
+.nombre-planeta {
+    padding-top: 3.875rem;
+}
+.planeta-texto {
+    height: 150px;
+    width: 350px;
+    padding-top: 1.4375rem;
+}
+
+.source {
+    padding-top: 3rem;
+    color: $grisClaro;
+}
+
+.botones-header {
+    display: none
+}
+
+.btn-facts {
+    @include estiloBoton;
+    height: 48px;
+    width: 350px;
+    cursor: pointer;
+}
+
+.btn-ovw {
+    margin-top: 1.5rem;
+}
+
+.btn-num {
+    padding: 1.75rem;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.active {
+    background-color: map-get($map: $btn-planet, $key: mercury);
+    border: none;
+}
+
+.default {
+    background-color: map-get($map: $botones, $key: default);
+    mix-blend-mode: normal;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    &:hover {
+        background-color: map-get($map: $botones, $key: hover);
+        transition: all 0.7s;
+    }
+}
+
+.contenedor-facts {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.facts {
+    height: 8rem;
+    width: 15.9375rem;
+    margin-right: 5rem;
+    mix-blend-mode: normal;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 1rem;
+
+    & h4 {
+        padding: 1.25rem 1.4375rem;
+        padding-bottom: .25rem;
+    }
+
+    & h2 {
+        padding-left: 1.4375rem;
+    }
+}

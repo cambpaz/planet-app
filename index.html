@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/1024px-Saturnx.png">
+    <title>PLANET FACT APP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <div class="contenedor-pagina">
+        <header>
+            <p class="pageName">THE PLANETS</p>
+            
+            <div class="container">
+                <div id="hamburger">
+                    <svg width="65" height="65" viewBox="0 0 100 100">
+                        <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                        <path class="line line2" d="M 20,50 H 80" />
+                        <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                    </svg>
+                </div>
+            </div>
+            <nav id="nav" class="nav-bar">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <button id="MERCURY" class="nav-link">MERCURY</button>
+                    </li>
+                    <li class="nav-item">
+                        <button id="VENUS" class="nav-link">VENUS</button>
+                    </li>
+                    <li class="nav-item">
+                        <button id="EARTH" class="nav-link">EARTH</button>
+                    </li>
+                    <li class="nav-item">
+                        <button id="MARS" class="nav-link">MARS</button>
+                    </li>
+                    <li class="nav-item">
+                        <button id="JUPITER" class="nav-link">JUPITER</button>
+                    </li>
+                    <li class="nav-item">
+                        <button id="SATURN" class="nav-link">SATURN</button>
+                    </li>
+                    <li class="nav-item">
+                        <button id="URANUS" class="nav-link">URANUS</button>
+                    </li>
+                    <li class="nav-item">
+                        <button id="NEPTUNE" class="nav-link">NEPTUNE</button>
+                    </li>
+                </ul>
+            </nav>
+            <div class="botones-header">
+                <button id="58.6 DAYS" class="active btn-mb btn-ovw">
+                    OVERVIEW</button>
+                <button id="planetaUno" class="btn-internal default btn-mb">STRUCTURE</button>
+                <button id="430°c" class="btn-geology default btn-mb">GEOLOGY</button>
+            </div>
+        </header>
+        <main>
+            <div class="contenedor-planeta">
+                <div class="contenedor-up">
+                    <div class="contenedor-imagen">
+                        <img id="imagenPlaneta" class="planeta-svg"
+                            src="assets/planet-mercury.svg" alt="mercurio">
+                        <img id="geology-img" src="assets/geology-mercury.png" alt="">
+                    </div>
+                    <div class="contenedorInfoPlaneta">
+                        <h1 class="nombre-planeta">MERCURY</h1>
+                        <p class="planeta-texto">Mercury is the smallest planet in the Solar System and the closest to the
+                            Sun.
+                            Its orbit around the
+                            Sun takes 87.97 Earth DAYS, the shortest of all the Sun's planets. Mercury is one of four
+                            terrestrial planets in the Solar System, and is a rocky body like Earth.</p>
+                        <p class="source">Source : <a id="Wikipedia-link" target="_blank"
+                                href="https://en.wikipedia.org/wiki/Mercury_(planet)">Wikipedia</a></p>
+                        <button id="58.6 DAYS" class="btn-facts active btn-ovw"><span class="btn-num">01</span>
+                            OVERVIEW</button> <br>
+                        <button id="planetaUno" class="btn-internal btn-facts default"><span class="btn-num">02</span> INTERNAL STRUCTURE</button> <br>
+                        <button id="430°c" class="btn-facts btn-geology default"><span class="btn-num">03</span> SURFACE GEOLOGY</button> <br>
+                    </div>
+    
+                </div>
+                <div class="contenedor-facts">
+                    <div class="facts">
+                        <h4>ROTATION TIME</h4>
+                        <h2 id="rotationTime">58.6 DAYS</h2>
+                    </div>
+                    <div class="facts">
+                        <h4>REVOLUTION TIME</h4>
+                        <h2 id="revolutionTime">87.97 DAYS</h2>
+                    </div>
+                    <div class="facts">
+                        <h4>RADIUS</h4>
+                        <h2 id="radius">2,439.7 KM</h2>
+                    </div>
+                    <div class="facts">
+                        <h4>AVERAGE TEMP.</h4>
+                        <h2 id="temp">430°c</h2>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/planetasUI.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

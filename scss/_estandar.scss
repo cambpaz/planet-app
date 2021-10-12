@@ -1,0 +1,108 @@
+$blanco: #FFFFFF;
+$negro: #070724;
+$celeste: #419EBB;
+$violeta: #6f2ed6;
+$grisClaro: #838391;
+$grisOscuro:#38384F;
+$amarillo: #EDA249;
+$rojo: #D83A34;
+$azul:#2d68f0;
+$verdeAgua:#1ec2a4;
+$naranjaOscuro: #CD5120;
+$rojoOscuro:#D14C32;
+$fontAntonio: 'Antonio',
+sans-serif;
+$fontSpartan: 'Spartan',
+sans-serif;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fontSpartan;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5625rem;
+    text-align: left;
+    background-color: $negro;
+    color: $blanco;
+}
+.contenedor-pagina {
+    background-image: url(../assets/background-stars.svg);
+}
+
+h1 {
+    font-family: $fontAntonio;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 6.5rem;
+    text-align: left;
+}
+
+h2 {
+    font-family: $fontAntonio;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.25rem;
+    letter-spacing: -1.5px;
+    text-align: left;
+}
+
+h3 {
+    font-family: $fontSpartan;
+    font-size: .75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5625rem;
+    letter-spacing: .160714rem;
+    text-align: left;
+}
+
+h4 {
+    font-family: $fontSpartan;
+    font-size: .6875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5625rem;
+    letter-spacing: .0625rem;
+    text-align: left;
+}
+
+a {
+    color: $blanco;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+@mixin estiloBoton {
+    font-family: $fontSpartan;
+    font-size: .75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5625rem;
+    letter-spacing: .160714rem;
+    text-align: left;
+    color: $blanco;
+    margin-top: 1rem;
+}
+
+$botones: (default: $negro,
+    active: $celeste,
+    hover: $grisOscuro);
+
+$btn-planet: (mercury: $celeste,
+    venus: $amarillo,
+    earth: $violeta,
+    mars: $rojo,
+    jupiter: $rojoOscuro,
+    saturn: $naranjaOscuro,
+    uranus: $verdeAgua,
+    neptune: $azul)
