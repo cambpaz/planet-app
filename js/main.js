@@ -10,6 +10,14 @@ $(document).ready(
     }),
 )
 
+let colores = {
+    MERCURY: 'red',
+    SATURN: 'purple',
+    EARTH: 'blue'
+}
+
+
+
 class LocalStorage {
     static guardarPlanetas(planetas) {
         localStorage.setItem("Planetas", JSON.stringify(planetas))
@@ -73,8 +81,7 @@ function displayInternal(e) {
     $(".btn-geology").removeClass("active");
     $(".btn-geology").addClass("default")
     imagenPlaneta.src = planeta.images.internal;
-    $("#geology-img").hide()
-
+    $("#geology-img").hide();
 }
 
 function displayGeology(e) {
