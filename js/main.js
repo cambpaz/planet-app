@@ -1,5 +1,5 @@
 $(document).ready(
-    $.get("../json/data.json", function (listaPlanetas, estado) {
+    $.get("json/data.json", function (listaPlanetas, estado) {
         let planetas = [];
         if (estado == "success") {
             for (planeta of listaPlanetas) {
